@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #87556f;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 20px;
+    background-color: #322f3d;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+nav {
+    background-color: #59405c;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #322f3d;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    font-family: 'Fredoka One';
+}
+
+.featured-image {
+    width: 100%;
+    width: 800px;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffdada;
+}
+
+.card:nth-child(even) {
+    background-color: #c8d5b9;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.profile-img {
+    width: 200px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+header {
+    display: inline;
+}
+
+.button-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#next1,
+#next2,
+#next3,
+#next4,
+#prev1,
+#prev2,
+#prev3,
+#prev4 {
+    padding: 6px;
+    width: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    color: white;
+    cursor: pointer;
+}
+
+#next1,
+#next2,
+#next3,
+#next4 {
+    background-color: cadetblue;
+}
+
+#prev1,
+#prev2,
+#prev3,
+#prev4 {
+    background-color: crimson;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+}
+
+.about img {
+    margin-bottom: 40px;
+}
+
+figcaption {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .featured-image {
+        width: 400px;
+    }
+}

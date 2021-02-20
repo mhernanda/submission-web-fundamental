@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title></title>
 </head>
 <body>
     <header>
         <div class="jumbotron">
-            <h1>Prestige Car Shop</h1>
-            <p>Jual Mobil Mewah Terpercaya</p>
+            <h1>Prestige Car Gallery</h1>
+            <p>Kumpulan Mobil - Mobil Mewah</p>
         </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#price_calc">Price Calculation</a></li>
-                <li>Cart</li>
-                <li>0</li>
-                <li><button>Checkout</button></li>
+                <li><a href="#about_us">About Prestige</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="home">
         <div id="content">
-            <article>
+            <article class="card">
                 <h2>Tesla Model S</h2>
                 <h3>Rp. 1,400,000,000</h3>
-                <img src="assets/image/tesla/tesla_main.jpg">
+
+                <img src="assets/image/tesla/tesla_main.jpg" class="featured-image" id="slideShow1">
+                <div class="button-container">
+                    <button id="prev1">Previous</button>
+                    <button id="next1">Next</button>
+                </div>
 
                 <p>Tesla Model S adalah salah satu sedan listrik pertama yang memiliki desain menawan sekaligus futuristik. Lampu utamanya menggunakan LED dengan 
                     desain rumah lampu menyipit. Di bagian belakang, bumper besarnya dilengkapi dengan LED dan aksen krom pada spoilernya.</p>
@@ -42,11 +45,16 @@
                     menghasilkan tenaga 503 hp. Kombinasi tenaga dari kedua motor tersebut adalah 680 hp. Sedangkan torsi depan 376 Nm, torsi belakang 712 Nm dan 
                     kombinasi depan-belakang adalah 1073 Nm yang dikombinasikan dengan transmisi otomatis 1-kecepatan.</p>
             </article>
-
-            <article>
+            <!--
+            <article class="card">
                 <h2>Lamborghini Huracan</h2>
                 <h3>Rp. 8,900,000,000</h3>
-                <img src="assets/image/lamborghini/lamborghini_main.jpg">
+
+                <img src="assets/image/lamborghini/lamborghini_main.jpg" class="featured-image" id="slideShow2">
+                <div class="button-container">
+                    <button id="prev2" class="lambo">Previous</button>
+                    <button id="next2" class="lambo">Next</button>
+                </div>
 
                 <p>Model ini merupakan versi penggerak seluruh roda (AWD) dengan  peningkatan di beberapa sektor. Supercar ini dibekali mesin V10 tanpa turbo alias 
                     naturally aspirated. Kapasitasnya 5,2 liter,  dengan output tenaga mencapai 648 PS di putaran 8.000 rpm dan torsi maksimal menyentuh 600 Nm di 
@@ -60,11 +68,16 @@
                     580 PS saja. Selain itu, Huracan juga didaulat memiliki varian terkencang bertaju Performante. Lagi-lagi, masih mengusung mesin yang sama tapi kali ini 
                     mampu mengeluarkan 640 ps.</p>
             </article>
-
-            <article>
+        -->
+            <article class="card">
                 <h2>BMW M3</h2>
                 <h3>Rp. 2,000,000,000</h3>
-                <img src="assets/image/bmw/bmw_main.jpg">
+
+                <img src="assets/image/bmw/bmw_main.jpg" class="featured-image" id="slideShow2">
+                <div class="button-container">
+                    <button id="prev2">Previous</button>
+                    <button id="next2">Next</button>
+                </div>
 
                 <p>Sedan yang dihadirkan sebagai generasi ke tiga dari seri M Series ini tersedia dalam bentuk coupe dan versi empat pintu. Tak hanya itu saja, BMW M3 
                     Sedan ini akan dibekali dengan mekanisme yang lebih berkualitas dan sedikit cenderung kaku untuk menunjang penggunaan dalam aktivitas sport.</p>
@@ -79,10 +92,15 @@
                     Sementara itu, untuk torsi puncaknya sanggup meraih titik 406 Nm per putaran 1850 – 5500 rpm.</p>
             </article>
 
-            <article>
+            <article class="card">
                 <h2>Nissan GTR</h2>
                 <h3>Rp. 1,600,000,000</h3>
-                <img src="assets/image/nissan/nissan_main.jpg">
+
+                <img src="assets/image/nissan/nissan_main.jpg" class="featured-image" id="slideShow3">
+                <div class="button-container">
+                    <button id="prev3">Previous</button>
+                    <button id="next3">Next</button>
+                </div>
 
                 <p>Nissan GT-R memang dirancang sebagai supercar yang memiliki mesin bertenaga besar. Lihat saja mesin yang digunakan 3.8-liter Twin-turbocharged 
                     24-valve V6. Mesin Nissan GT-R ini sudah menggunakan mesin turbo. Sehingga tenaga yang dihasilkan akan berkali-kali lipat besar dari 
@@ -95,10 +113,15 @@
                     pengalaman berbeda. Terlebih lagi raungan suara mesin akan menjadikan adrenalin pengendara semakin meningkat.</p>
             </article>
 
-            <article>
+            <article class="card">
                 <h2>Bugatti Chiron</h2>
                 <h3>Rp. 46,800,000,000</h3>
-                <img src="assets/image/bugatti/bugatti_main.jpg">
+                
+                <img src="assets/image/bugatti/bugatti_main.jpg" class="featured-image" id="slideShow4">
+                <div class="button-container">
+                    <button id="prev4">Previous</button>
+                    <button id="next4">Next</button>
+                </div>
 
                 <p>Bugatti Chiron bisa dikatakan merupakan testamen tertinggi yang dicetuskan pabrikan Bugatti Automobiles S.A.S. yang bermarkas di Perancis. 
                     Lewat Bugatti Chiron, benchmark hypercar menjadi terukir kembali dan menempatkan Bugatti Chiron sebagai mobil hypercar yang tertinggi di 
@@ -112,62 +135,50 @@
                     grip yang lebih maksimal, sekalipun saat menikung jarum speedometer sedang menunjukkan angka kecepatan 200 km/jam.</p>
             </article>
 
-            <article>
-                <h2>Kalkulasi Harga</h2>
+            <article class="about card" id="about_us">
+                <h2>About Prestige</h2>
+                <img src="assets/image/logo.png">
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nama Produk</th>
-                            <th>Kuantitas</th>
-                            <th>Jumlah Harga</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Total Harga: Rp. </th>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>Prestige Car Gallery dibuat atas dasar kesukaan penulis terhadap mobil mewah, sport, elegan dan mahal meskipun tidak sanggup memilikinya :(</p>
             </article>
         </div>
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>About Me</h2>
+                    <figure>
+                        <img src="assets/image/profile_picture.jpeg" class="profile-img">
+                        <figcaption>Muhammad Hernanda</figcaption>
+                    </figure>
+                </header>
+                
+                <section>
+                    <table>
+                        <tr>
+                            <th>Asal</th>
+                            <td>Cilegon</td>
+                        </tr>
+                        <tr>
+                            <th>Github</th>
+                            <td><a href="https://github.com/mhernanda">mhernanda</a> </td>
+                        </tr>
+                        <tr>
+                            <th>Instagram</th>
+                            <td><a href="https://www.instagram.com/mhernanda66/">mhernanda66</a> </td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
     </main>
 
-    <aside>
-        <article>
-            <header>
-                <h2>About</h2>
-                <figure>
-                    <img src="assets/image/profile_picture.jpeg">
-                    <figcaption>Muhammad Hernanda</figcaption>
-                </figure>
-            </header>
-            
-            <section>
-                <table>
-                    <tr>
-                        <th>Asal</th>
-                        <td>Cilegon</td>
-                    </tr>
-                    <tr>
-                        <th>LinkedIn</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>Github</th>
-                        <td>mhernanda66</td>
-                    </tr>
-                    <tr>
-                        <th>Instagram</th>
-                        <td>mhernanda66</td>
-                    </tr>
-                </table>
-            </section>
-        </article>
-    </aside>
+    
 
     <footer>
-        <p>&copy; Prestige Car Shop 2021</p>
+        <p>&copy; Prestige Car Gallery 2021</p>
     </footer>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
